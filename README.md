@@ -1,5 +1,4 @@
 # MetricsAgent
-
 This project shows an example of a metric-gathering extension for a web application based on these [requirements](https://contrast-security-oss.github.io/join-the-team/challenges.html#java-instrumentation-engineer-project). 
 The “extension” is loosely coupled with the app to gathers metrics on requests and responses served by the web application.
 
@@ -27,7 +26,8 @@ git@github.com:trouseredApe/metrics-agent.git - to get the source code
 ```
 
 
-If everything worked correctly you should see the app running on `localhost:8080 ` 
+If everything worked correctly you should see the app running at `localhost:8080 ` 
+and you can access the in-memory database at`localhost:8080/h2-console`
 
 ## Running the tests
 
@@ -41,5 +41,5 @@ You can run automated unit tests inside your favorite ide or run `./gradlew test
 * [Gradle](https://gradle.org/) - Dependency Management
 * [Travis CI](https://travis-ci.org/) - CI / CD
 
-## Authors
-* **Pratik Pandey** - *Initial work* - [Mr. TrouseredApe](https://github.com/TrouseredApe)
+## Author
+* [Pratik Pandey](https://github.com/TrouseredApe)
