@@ -1,13 +1,11 @@
 package web;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
-import service.MetricsCollector;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -16,18 +14,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MemeControllerSmokeTest {
 
     @Autowired
-    private MemeController controller;
+    private MemeController memeController;
 
     @Test
     public void contexLoads() throws Exception {
-        assertThat(controller).isNotNull();
+        assertThat(memeController).isNotNull();
     }
 
     @Test
+    @Ignore
     public void indexTest() throws Exception {
-        System.out.println(controller.index());
-        assertThat(controller.index()).contains("Here's today's meme for you meme-url");
-
+        System.out.println(memeController.index(null));
+        assertThat(memeController.index(null)).contains("good");
     }
 
 }

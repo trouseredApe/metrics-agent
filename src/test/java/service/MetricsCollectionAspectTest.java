@@ -4,27 +4,23 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import web.MemeController;
+import web.Application;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = MetricsCollector.class)
-public class MetricsCollectorTest {
+//@AutoConfigureTestDatabase
+@ContextConfiguration(classes = Application.class)
+@SpringBootTest(classes = MetricsCollectionAspect.class)
+public class MetricsCollectionAspectTest {
 
     @Autowired
-    private MetricsCollector metricsCollector;
+    private MetricsCollectionAspect metricsCollectionAspect;
 
     @Test
-    public void before()  {
-        //test
-    }
-
-    @Test
-    public void after()  {
+    public void around()  {
         //test
     }
 }
