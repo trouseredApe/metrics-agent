@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    title {
+        font: small-caps bolder 12px/150% Arial, Helvetica, sans-serif;
+        display: block;
+    }
+
+    item {
+        font: normal 12px/150% Arial, Helvetica, sans-serif;
+        display: block;
+    }
+</style>
+
+<body>
+
+
+<div class="title"> Request Metrics </div>
+<div class="item">Minimum time to complete a request: <span data-th-text="${map['minTime']}"></span></div>
+<div class="item">Maximum time to complete a request: <span data-th-text="${map['maxTime']}"></span></div>
+<div class="item">Average time to complete a request: <span data-th-text="${map['avgTime']}"></span></div>
+
+</p>
+
+<div class="title"> Response Metrics </div>
+<div class="item"> Minimum size of the request: <span data-th-text="${map['minSize']}"></span></div>
+<div class="item"> Maximum size of the request: <span data-th-text="${map['maxSize']}"></span></div>
+<div class="item"> Average size of the request: <span data-th-text="${map['avgSize']}"></span></div>
+
+
+
+</body>
+</html>
