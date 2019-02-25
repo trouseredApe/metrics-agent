@@ -12,9 +12,6 @@ In the code you'll see the following two projects:
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-
-Here are the pre-requisites for this project.  
-
 ```
 Java8
 Maven
@@ -22,16 +19,22 @@ Maven
 ### Installing
 These instructions applies for *nix based systems. 
 
-`git clone git@github.com:trouseredApe/metrics-agent.git - to get the source code`
-
-`cd metrics-agent/agent`
-
-`mvn install`
-
-Now import meme-app as a maven project in IntellJ and build project and run `Application.java` class.
+`git clone git@github.com:trouseredApe/metrics-agent.git - to get the source code for both projects`
 
 
-If everything worked correctly you should see the app running at `localhost:8080`. Click the `Next` link on the page to load a few memes and access the request and response metrics at `localhost:8080/metrics` page
+#### metrics-collection-agent
+```
+cd metrics-agent/metrics-collection-agent
+mvn install
+```
+
+#### meme-app
+```
+Import and build `meme-app` as a maven project in IntellJ
+Run `Application.java` class
+```
+
+If everything worked correctly you should see the web-app running at `localhost:8080`. Click the `More` link on the page to load a few memes and access the request and response metrics at `localhost:8080/metrics` page
 
 The in-memory database can be accessed at `localhost:8080/h2-console`. Make sure to use `jdbc:h2:mem:testdb` as datasource url.
 
