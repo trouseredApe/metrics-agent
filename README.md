@@ -1,4 +1,4 @@
-# MetricsAgent
+# MetricsAgent  [![Build Status](https://travis-ci.com/trouseredApe/metrics-agent.svg?branch=master)](https://travis-ci.com/trouseredApe/metrics-agent)
 This project shows an example of a metric gathering extension for a web application based on these [requirements](https://contrast-security-oss.github.io/join-the-team/challenges.html#java-instrumentation-engineer-project). The “extension” is loosely coupled with the app to gathers metrics on requests and responses handled by the web application.
 
 In the code you'll see the following two projects:  
