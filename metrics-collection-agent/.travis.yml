@@ -1,0 +1,2 @@
+before_script: cd metrics-collection-agent
+language: java
