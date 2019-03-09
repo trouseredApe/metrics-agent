@@ -19,6 +19,10 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    /**
+     * TODO: Test edge cases, Test aspects from meme-app, remove duplicated dependencies, Understand where spring-boot creates an actual HTTP response
+     *
+     */
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 
@@ -31,6 +35,8 @@ public class Application {
             for (String beanName : beanNames) {
                 System.out.println(beanName);
             }
+
+
 
         };
     }
